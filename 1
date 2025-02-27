@@ -1,0 +1,15 @@
+def get_shirt_size(chest_size):
+    if chest_size <= 34:
+        return "XS"
+    elif chest_size <= 36:
+        return "S"
+    elif chest_size <= 38:
+        return "M"
+    elif chest_size <= 40:
+        return "L"
+    else:
+        return "XL"
+
+# ตัวอย่างการใช้งาน
+chest_size = float(input("Enter chest size: "))
+print(f"Shirt size: {get_shirt_size(chest_size)}")
