@@ -1,0 +1,13 @@
+def get_membership(spending):
+    if spending < 15000:
+        return "ไม่สามารถสมัครสมาชิกได้"
+    elif spending < 70000:
+        return "ระดับ Silver"
+    elif spending < 100000:
+        return "ระดับ Gold"
+    else:
+        return "ระดับ Platinum"
+
+# ตัวอย่างการใช้งาน
+spending = float(input("Enter spending amount: "))
+print(f"Membership Level: {get_membership(spending)}")
