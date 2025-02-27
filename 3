@@ -1,0 +1,15 @@
+def get_grade(score):
+    if score >= 80:
+        return "A"
+    elif score >= 70:
+        return "B"
+    elif score >= 60:
+        return "C"
+    elif score >= 50:
+        return "D"
+    else:
+        return "F"
+
+# ตัวอย่างการใช้งาน
+score = float(input("Enter exam score: "))
+print(f"Grade: {get_grade(score)}")
